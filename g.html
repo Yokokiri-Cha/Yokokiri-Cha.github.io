@@ -54,7 +54,19 @@
           const model = gltf.scene;
           scene.add(model);
         });
-setInterval(blink, 100)
+
+        
+        tick();
+
+        // 毎フレーム時に実行されるループイベントです
+        function tick() {
+          // レンダリング
+          renderer.render(scene, camera);
+          requestAnimationFrame(tick);
+        }
+      }
+      
+      setInterval(blink, 100)
 
 function blink() {
     for (let i = 0; i < 4; i++) {
@@ -136,16 +148,6 @@ original_heights[i] = world_eye
     }
 
 }
-        
-        tick();
-
-        // 毎フレーム時に実行されるループイベントです
-        function tick() {
-          // レンダリング
-          renderer.render(scene, camera);
-          requestAnimationFrame(tick);
-        }
-      }
     </script>
   </head>
   <body>

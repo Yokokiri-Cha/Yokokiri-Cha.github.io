@@ -42,6 +42,9 @@
         // 環境光を追加
         const ambientLight = new THREE.AmbientLight(0xffffff);
         scene.add(ambientLight);
+        
+        const backgroundTexture  = new THREE.TextureLoader().load("./bk.png");
+        scene.background = backgroundTexture;
 
         // GLTF形式のモデルデータを読み込む
         const loader = new THREE.GLTFLoader();

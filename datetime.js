@@ -16,7 +16,7 @@ function showClock2() {
   var month=fulldata.getMonth()+1;
   var day=fulldata.getDate();
   var dayvalue=fulldata.getDay();
-  var temp=new Array("日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日");
-document.getElementById("datevalue").innerHTML=("今日は"+year+"年"+month+"月"+day+"日"+temp[dayvalue]+"です")
+  var temp=new Array("(日)","(月)","(火)","(水)","(木)","(金)","(土)");
+document.getElementById("datevalue").innerHTML=(year+"年"+month+"月"+day+"日"+temp[dayvalue])
 }
 setInterval('showClock2()',1000);

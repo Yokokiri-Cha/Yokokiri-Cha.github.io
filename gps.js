@@ -1,7 +1,7 @@
 
 
 function test() {
-    watch_id = navigator.geolocation.watchPosition(test2, function(e) { alert(e.message); }, {"enableHighAccuracy": true, "timeout": 20000, "maximumAge": 1000});
+    watch_id = navigator.geolocation.watchPosition(test2, {"enableHighAccuracy": true, "timeout": 20000, "maximumAge": 1000});
 }
 
 
@@ -13,3 +13,5 @@ function test2(position) {
     document.getElementById('pss').innerHTML = txt;
 
 }
+//参考:https://blog.codecamp.jp/javascript-geolocation    
+//ありがとうございます!!

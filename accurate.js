@@ -11,6 +11,6 @@ function sl(pos){
 	document.getElementById("table_lat").innerHTML = lat;
 	document.getElementById("table_lon").innerHTML = lon;
 }
-setInterval('sl(pos)',1000);
+setInterval('ps()',1000);
 //参考:https://systemexpress.co.jp/htmlcss/geolocation.html
 //ありがとうございます!!

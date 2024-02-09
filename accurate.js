@@ -1,3 +1,6 @@
+function ps(){
+navigator.geolocationgetCurrentPosision(sl);
+}
 function sl(pos){
 
 

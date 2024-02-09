@@ -1,7 +1,8 @@
 
 
 function test() {
-    watch_id = navigator.geolocation.watchPosition(test2, {"enableHighAccuracy": true, "timeout": 20000, "maximumAge": 1000});
+    var errs="";
+    watch_id = navigator.geolocation.watchPosition(test2,function(e) { errs = e.message}, {"enableHighAccuracy": true, "timeout": 20000, "maximumAge": 1000});
 }
 
 
